@@ -451,128 +451,146 @@
 
     <!-- Contacto Section -->
     <section id="contacto" class="py-20 px-4 sm:px-6 lg:px-8 bg-black">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                    <span class="text-blue-400">Contáctame</span> para tu evento
-                </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                    Completa el formulario y me pondré en contacto contigo para discutir los detalles de tu evento.
-                </p>
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                <span class="text-blue-400">Contáctame</span> para tu evento
+            </h2>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Completa el formulario y me pondré en contacto contigo para discutir los detalles de tu evento.
+            </p>
+        </div>
+        
+        <div class="flex flex-col lg:flex-row gap-12">
+            <div class="lg:w-1/2">
+                <!-- Formulario modificado para formsubmit.co -->
+                <form action="https://formsubmit.co/juanyepezdj@gmail.com" method="POST" class="space-y-6">
+                    <!-- Campos ocultos para configuración -->
+                    <input type="hidden" name="_next" value="https://juank-dj.com/gracias.html"> <!-- Reemplaza con tu URL -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Nueva solicitud de evento!">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="nombre" class="block text-gray-300 mb-2">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tu nombre" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Correo electrónico</label>
+                            <input type="email" id="email" name="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="telefono" class="block text-gray-300 mb-2">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="+593 999999999" required>
+                    </div>
+                    <div>
+                        <label for="evento" class="block text-gray-300 mb-2">Tipo de evento</label>
+                        <select id="evento" name="evento" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="boda">Boda</option>
+                            <option value="fiesta-privada">Fiesta Privada</option>
+                            <option value="corporativo">Evento Corporativo</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fecha" class="block text-gray-300 mb-2">Fecha del evento</label>
+                        <input type="date" id="fecha" name="fecha" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                    </div>
+                    <div>
+                        <label for="mensaje" class="block text-gray-300 mb-2">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Cuéntame sobre tu evento, ubicación, número de invitados y cualquier detalle especial que quieras compartir" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                            Enviar solicitud <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
             
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="lg:w-1/2">
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-ccols-2 gap-6">
-                            <div>
-                                <label for="nombre" class="block text-gray-300 mb-2">Nombre completo</label>
-                                <input type="text" id="nombre" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tu nombre">
+            <div class="lg:w-1/2">
+                <div class="bg-gradient-to-br from-blue-900 to-purple-900 rounded-xl p-8 h-full">
+                    <h3 class="text-2xl font-bold mb-6">Información de contacto</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-400 text-xl"></i>
                             </div>
                             <div>
-                                <label for="email" class="block text-gray-300 mb-2">Correo electrónico</label>
-                                <input type="email" id="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="tu@email.com">
-                            </div>
-                        </div>
-                        <div>
-                            <label for="telefono" class="block text-gray-300 mb-2">Teléfono</label>
-                            <input type="tel" id="telefono" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="+593 999999999">
-                        </div>
-                        <div>
-                            <label for="evento" class="block text-gray-300 mb-2">Tipo de evento</label>
-                            <select id="evento" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                <option value="">Selecciona una opción</option>
-                                <option value="boda">Boda</option>
-                                <option value="fiesta-privada">Fiesta Privada</option>
-                                <option value="corporativo">Evento Corporativo</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="fecha" class="block text-gray-300 mb-2">Fecha del evento</label>
-                            <input type="date" id="fecha" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        </div>
-                        <div>
-                            <label for="mensaje" class="block text-gray-300 mb-2">Mensaje</label>
-                            <textarea id="mensaje" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Cuéntame sobre tu evento, ubicación, número de invitados y cualquier detalle especial que quieras compartir"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
-                                Enviar solicitud <i class="fas fa-paper-plane ml-2"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                
-                <div class="lg:w-1/2">
-                    <div class="bg-gradient-to-br from-blue-900 to-purple-900 rounded-xl p-8 h-full">
-                        <h3 class="text-2xl font-bold mb-6">Información de contacto</h3>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="bg-blue-600 bg-opacity-20 p-3 rounded-full mr-4">
-                                    <i class="fas fa-map-marker-alt text-blue-400 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Ubicación</h4>
-                                    <p class="text-gray-300">Quito, Ecuador</p>
-                                    <p class="text-gray-400 text-sm">Servicio en toda la ciudad y áreas cercanas</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-purple-600 bg-opacity-20 p-3 rounded-full mr-4">
-                                    <i class="fas fa-phone-alt text-purple-400 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Teléfono</h4>
-                                    <p class="text-gray-300">+593 99 368 1879</p>
-                                    <p class="text-gray-400 text-sm">Disponible de lunes a domingo</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-blue-600 bg-opacity-20 p-3 rounded-full mr-4">
-                                    <i class="fas fa-envelope text-blue-400 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Correo electrónico</h4>
-                                    <p class="text-gray-300">juanyepezdj@gmail.com</p>
-                                    <p class="text-gray-400 text-sm">Respuesta en menos de 24 horas</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-purple-600 bg-opacity-20 p-3 rounded-full mr-4">
-                                    <i class="fas fa-clock text-purple-400 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Horario de atención</h4>
-                                    <p class="text-gray-300">10:00 AM - 10:00 PM</p>
-                                    <p class="text-gray-400 text-sm">Eventos disponibles a cualquier hora</p>
-                                </div>
+                                <h4 class="font-bold mb-1">Ubicación</h4>
+                                <p class="text-gray-300">Quito, Ecuador</p>
+                                <p class="text-gray-400 text-sm">Servicio en toda la ciudad y áreas cercanas</p>
                             </div>
                         </div>
                         
-                        <div class="mt-10">
-                            <h4 class="font-bold mb-4">Sígueme en redes sociales</h4>
-                            <div class="flex space-x-4">
-                                <a href="https://www.facebook.com/juanyepezdj.ec" class="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition duration-300">
-                                    <i class="fab fa-facebook-f text-xl"></i>
-                                </a>
-                                <a href="https://www.instagram.com/juanyepezdj" class="w-12 h-12 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition duration-300">
-                                    <i class="fab fa-instagram text-xl"></i>
-                                </a>
-                                <a href="https://wa.me/593993681879" target="_blank" class="w-12 h-12 bg-gray-800 hover:bg-green-500 rounded-full flex items-center justify-center transition duration-300">
-            <i class="fab fa-whatsapp text-xl"></i>
-        </a>
+                        <div class="flex items-start">
+                            <div class="bg-purple-600 bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-purple-400 text-xl"></i>
                             </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Teléfono</h4>
+                                <p class="text-gray-300">+593 99 368 1879</p>
+                                <p class="text-gray-400 text-sm">Disponible de lunes a domingo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Correo electrónico</h4>
+                                <p class="text-gray-300">juanyepezdj@gmail.com</p>
+                                <p class="text-gray-400 text-sm">Respuesta en menos de 24 horas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-600 bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-purple-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Horario de atención</h4>
+                                <p class="text-gray-300">10:00 AM - 10:00 PM</p>
+                                <p class="text-gray-400 text-sm">Eventos disponibles a cualquier hora</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold mb-4">Sígueme en redes sociales</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/juanyepezdj.ec" class="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/juanyepezdj" class="w-12 h-12 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://wa.me/593993681879" target="_blank" class="w-12 h-12 bg-gray-800 hover:bg-green-500 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    // Opcional: Puedes agregar este script para mostrar un mensaje después del envío
+    document.querySelector('form').addEventListener('submit', function(e) {
+        // El formulario se enviará automáticamente a formsubmit.co
+        // Este código es solo para feedback visual
+        setTimeout(() => {
+            alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
+        }, 500);
+    });
+</script>
 
     <!-- Footer -->
     <footer class="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
@@ -670,17 +688,7 @@
             });
         });
 
-        // Form submission (example)
-        const form = document.querySelector('form');
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Here you would typically send the form data to a server
-                alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
-                form.reset();
-            });
-        }
+      
 
         // Animation on scroll
         const observerOptions = {
